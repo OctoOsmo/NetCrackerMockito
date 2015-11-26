@@ -6,7 +6,7 @@ import java.util.List;
  */
 public class ArrayStatistic {
 
-    public static Integer getAverage(List<Integer> l){
+    public Integer getAverage(List<Integer> l){
         Integer sum = 0;
         for (Integer i : l) {
             sum += i;
@@ -14,7 +14,7 @@ public class ArrayStatistic {
         return sum / l.size();
     }
 
-    public static Integer getMax(List<Integer> l){
+    public Integer getMax(List<Integer> l){
         Integer max = Integer.MIN_VALUE;
         for (Integer i : l) {
             if (i > max)
@@ -23,7 +23,7 @@ public class ArrayStatistic {
         return max;
     }
 
-    public static Integer getMin(List<Integer> l)
+    public Integer getMin(List<Integer> l)
     {
         Integer min= Integer.MAX_VALUE;
         for (Integer i : l) {
@@ -31,6 +31,5 @@ public class ArrayStatistic {
                 min = i;
         }
         return min;
-
     }
 }

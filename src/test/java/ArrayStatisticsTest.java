@@ -2,7 +2,7 @@
  * Created by al on 24.11.2015.
  */
 import org.junit.Test;
-
+import static org.mockito.Mockito.*;
 import java.lang.reflect.Array;
 import java.util.ArrayList;
 
@@ -18,7 +18,7 @@ public class ArrayStatisticsTest {
         for (int i = 0; i <= 100; i++) {
             list.add(i);
         }
-        assertEquals((Integer)50, ArrayStatistic.getAverage(list));
+        assertEquals((Integer)50, st.getAverage(list));
     }
 
     @Test
@@ -29,7 +29,7 @@ public class ArrayStatisticsTest {
         list.add(-4);
         list.add(6);
         list.add(0);
-        assertEquals((Integer)6, ArrayStatistic.getMax(list));
+        assertEquals((Integer)6, st.getMax(list));
     }
 
     @Test
@@ -40,6 +40,14 @@ public class ArrayStatisticsTest {
         list.add(-4);
         list.add(6);
         list.add(0);
-        assertEquals((Integer)(-4), ArrayStatistic.getMin(list));
+        assertEquals((Integer)(-4), st.getMin(list));
+    }
+
+    @Test
+    public void testGetMinMockito() throws Exception {
+        ArrayList<Integer> l = new ArrayList<>();
+        ArrayStatistic mock = mock(ArrayStatistic.class);
+        when(mock.getMin(anyList())).thenReturn((Integer)42);
+        assertEquals((Integer)42, mock.getMin(l));
     }
 }
