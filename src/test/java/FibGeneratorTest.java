@@ -108,4 +108,18 @@ public class FibGeneratorTest {
         assertArrayEquals(l.toArray(), FibGen.getFibSeq(4).toArray());
         logger.debug("Leaving method");
     }
+
+    @Test
+    public void testGetNextNumSpy() throws Exception {
+        logger.debug("Entering method");
+        FibGenerator Gen = new FibGenerator();
+        FibGenerator spyGen = spy(Gen);
+        when(spyGen.getNextNum()).thenReturn(1);
+        ArrayList<Integer> mock = mock(ArrayList.class);
+        when(mock.get(anyInt())).thenReturn(1);
+        for (int i = 0; i < 100; i++) {
+            assertEquals((Integer)1, spyGen.getNextNum());
+        }
+        logger.debug("Leaving method");
+    }
 }
