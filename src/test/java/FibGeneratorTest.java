@@ -1,5 +1,7 @@
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.Marker;
+import org.apache.logging.log4j.MarkerManager;
 import org.apache.logging.log4j.core.LoggerContext;
 import org.junit.Before;
 import org.junit.Test;
@@ -15,19 +17,19 @@ import static org.mockito.Mockito.*;
 public class FibGeneratorTest {
 
     private FibGenerator fb;
-    private org.apache.logging.log4j.Logger logger;
+    final Logger logger= LogManager.getLogger(FibGeneratorTest.class);
+    final Marker test = MarkerManager.getMarker("test");
 
     @Before
     public void beforeTest() {
         this.fb = new FibGenerator();
-        logger = LogManager.getLogger(FibGeneratorTest.class);
     }
 
     @Test
     public void testGetFib0() throws Exception {
-        logger.info("Entering method");
+        logger.info(test, "Entering method");
         assertEquals((Integer)0, fb.getFibNum(0));
-        logger.info("Leaving method");
+        logger.info(test, "Leaving method");
     }
 
     @Test
@@ -57,7 +59,7 @@ public class FibGeneratorTest {
 
     @Test
     public void testGetFibSeq() throws Exception {
-        logger.info("Entering method");
+        logger.info(test, "Entering method");
         ArrayList<Integer> f1 = new ArrayList<>();
         f1.add(0);
         f1.add(1);
@@ -70,7 +72,7 @@ public class FibGeneratorTest {
         f1.add(21);
         ArrayList<Integer> f2 = fb.getFibSeq(8);
         assertArrayEquals(f1.toArray(), f2.toArray());
-        logger.info("Leaving method");
+        logger.info(test, "Leaving method");
     }
 
     @Test
@@ -95,7 +97,7 @@ public class FibGeneratorTest {
 
     @Test
     public void testGetNextNumMockito() throws Exception {
-        logger.debug("Entering method");
+        logger.debug(test, "Entering method");
         ArrayList<Integer> l = new ArrayList<>();
         FibGenerator MockGen = mock(FibGenerator.class);
         FibGenerator FibGen = new FibGenerator();
@@ -106,12 +108,12 @@ public class FibGeneratorTest {
             logger.debug(msg);
         }
         assertArrayEquals(l.toArray(), FibGen.getFibSeq(4).toArray());
-        logger.debug("Leaving method");
+        logger.debug(test, "Leaving method");
     }
 
     @Test
     public void testGetNextNumSpy() throws Exception {
-        logger.debug("Entering method");
+        logger.debug(test, "Entering method");
         FibGenerator Gen = new FibGenerator();
         FibGenerator spyGen = spy(Gen);
         when(spyGen.getNextNum()).thenReturn(1);
@@ -120,6 +122,6 @@ public class FibGeneratorTest {
         for (int i = 0; i < 100; i++) {
             assertEquals((Integer)1, spyGen.getNextNum());
         }
-        logger.debug("Leaving method");
+        logger.debug(test, "Leaving method");
     }
 }

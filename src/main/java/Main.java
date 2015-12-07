@@ -11,6 +11,6 @@ public class Main {
         org.apache.logging.log4j.Logger logger = LogManager.getLogger(Main.class);
 //        Logger logger2 = LogManager.getLogger(Main.class);
         logger.error("Imaginary Error");
-        System.out.println("hello world");
+        System.out.println("end");
     }
 }

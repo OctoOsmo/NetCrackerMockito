@@ -1,6 +1,7 @@
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.apache.logging.log4j.core.LoggerContext;
+import org.apache.logging.log4j.Marker;
+import org.apache.logging.log4j.MarkerManager;
 
 import java.util.ArrayList;
 
@@ -9,7 +10,9 @@ import java.util.ArrayList;
  */
 public class FibGenerator {
 
-    org.apache.logging.log4j.Logger logger = LogManager.getLogger(FibGenerator.class);
+    final Logger logger = LogManager.getLogger(FibGenerator.class);
+    final Marker mainLog = MarkerManager.getMarker("main_log");
+
     Integer prev = 1, prev2 = 0, iter = 0;
 
     public void reset(){
@@ -30,13 +33,13 @@ public class FibGenerator {
             prev = result;
         }
         String msg = "current iter = " + iter + " fibNum = " + result;
-        logger.debug(msg);
+        logger.debug(mainLog, msg);
         iter++;
         return result;
     }
 
     public Integer getFibNum(Integer n) {
-        logger.debug("Entering method");
+        logger.debug(mainLog, "Entering method");
         Integer result = null;
         if (0 == n)
             result = 0;
@@ -52,7 +55,7 @@ public class FibGenerator {
             }
             result = curr;
         }
-        logger.debug("Leaving method");
+        logger.debug(mainLog, "Leaving method");
         return result;
     }
 

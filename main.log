@@ -1,0 +1,56 @@
+2015-12-07 18:26:08,634 DEBUG FibGenerator [main] getNextNum current iter = 0 fibNum = 0 
+2015-12-07 18:26:08,635 DEBUG FibGenerator [main] getNextNum current iter = 1 fibNum = 1 
+2015-12-07 18:26:08,635 DEBUG FibGenerator [main] getNextNum current iter = 2 fibNum = 1 
+2015-12-07 18:26:08,636 DEBUG FibGenerator [main] getNextNum current iter = 3 fibNum = 2 
+2015-12-07 18:26:08,637 DEBUG FibGenerator [main] getNextNum current iter = 4 fibNum = 3 
+2015-12-07 18:26:08,637 DEBUG FibGenerator [main] getNextNum current iter = 5 fibNum = 5 
+2015-12-07 18:26:08,637 DEBUG FibGenerator [main] getNextNum current iter = 6 fibNum = 8 
+2015-12-07 18:26:08,639 DEBUG FibGenerator [main] getNextNum current iter = 7 fibNum = 13 
+2015-12-07 18:26:08,640 DEBUG FibGenerator [main] getNextNum current iter = 8 fibNum = 21 
+2015-12-07 18:26:08,640 DEBUG FibGenerator [main] getNextNum current iter = 9 fibNum = 34 
+2015-12-07 18:26:08,640 DEBUG FibGenerator [main] getNextNum current iter = 10 fibNum = 55 
+2015-12-07 18:26:08,641 DEBUG FibGenerator [main] getNextNum current iter = 11 fibNum = 89 
+2015-12-07 18:26:08,641 DEBUG FibGenerator [main] getNextNum current iter = 12 fibNum = 144 
+2015-12-07 18:26:08,642 DEBUG FibGenerator [main] getNextNum current iter = 13 fibNum = 233 
+2015-12-07 18:26:08,642 DEBUG FibGenerator [main] getNextNum current iter = 14 fibNum = 377 
+2015-12-07 18:26:08,642 DEBUG FibGenerator [main] getNextNum current iter = 15 fibNum = 610 
+2015-12-07 18:26:08,643 DEBUG FibGenerator [main] getNextNum current iter = 16 fibNum = 987 
+2015-12-07 18:26:08,643 DEBUG FibGenerator [main] getNextNum current iter = 17 fibNum = 1597 
+2015-12-07 18:26:08,643 DEBUG FibGenerator [main] getNextNum current iter = 18 fibNum = 2584 
+2015-12-07 18:26:08,644 DEBUG FibGenerator [main] getNextNum current iter = 19 fibNum = 4181 
+2015-12-07 18:26:08,644 DEBUG FibGenerator [main] getNextNum current iter = 20 fibNum = 6765 
+2015-12-07 18:26:08,644 DEBUG FibGenerator [main] getNextNum current iter = 21 fibNum = 10946 
+2015-12-07 18:26:08,645 DEBUG FibGenerator [main] getNextNum current iter = 22 fibNum = 17711 
+2015-12-07 18:26:08,645 DEBUG FibGenerator [main] getNextNum current iter = 23 fibNum = 28657 
+2015-12-07 18:26:08,645 DEBUG FibGenerator [main] getNextNum current iter = 24 fibNum = 46368 
+2015-12-07 18:26:08,646 DEBUG FibGenerator [main] getNextNum current iter = 25 fibNum = 75025 
+2015-12-07 18:26:08,646 DEBUG FibGenerator [main] getNextNum current iter = 26 fibNum = 121393 
+2015-12-07 18:26:08,646 DEBUG FibGenerator [main] getNextNum current iter = 27 fibNum = 196418 
+2015-12-07 18:26:08,647 DEBUG FibGenerator [main] getNextNum current iter = 28 fibNum = 317811 
+2015-12-07 18:26:08,647 DEBUG FibGenerator [main] getNextNum current iter = 29 fibNum = 514229 
+2015-12-07 18:26:08,648 DEBUG FibGenerator [main] getNextNum current iter = 30 fibNum = 832040 
+2015-12-07 18:26:08,648 DEBUG FibGenerator [main] getNextNum current iter = 31 fibNum = 1346269 
+2015-12-07 18:26:08,648 DEBUG FibGenerator [main] getNextNum current iter = 32 fibNum = 2178309 
+2015-12-07 18:26:08,649 DEBUG FibGenerator [main] getNextNum current iter = 33 fibNum = 3524578 
+2015-12-07 18:26:08,649 DEBUG FibGenerator [main] getNextNum current iter = 34 fibNum = 5702887 
+2015-12-07 18:26:08,649 DEBUG FibGenerator [main] getNextNum current iter = 35 fibNum = 9227465 
+2015-12-07 18:26:08,650 DEBUG FibGenerator [main] getNextNum current iter = 36 fibNum = 14930352 
+2015-12-07 18:26:08,650 DEBUG FibGenerator [main] getNextNum current iter = 37 fibNum = 24157817 
+2015-12-07 18:26:08,650 DEBUG FibGenerator [main] getNextNum current iter = 38 fibNum = 39088169 
+2015-12-07 18:26:08,651 DEBUG FibGenerator [main] getNextNum current iter = 39 fibNum = 63245986 
+2015-12-07 18:26:08,651 DEBUG FibGenerator [main] getNextNum current iter = 40 fibNum = 102334155 
+2015-12-07 18:26:08,651 DEBUG FibGenerator [main] getNextNum current iter = 41 fibNum = 165580141 
+2015-12-07 18:26:08,652 DEBUG FibGenerator [main] getNextNum current iter = 42 fibNum = 267914296 
+2015-12-07 18:26:08,654 DEBUG FibGenerator [main] getFibNum Entering method 
+2015-12-07 18:26:08,655 DEBUG FibGenerator [main] getFibNum Leaving method 
+2015-12-07 18:26:08,655 DEBUG FibGenerator [main] getFibNum Entering method 
+2015-12-07 18:26:08,655 DEBUG FibGenerator [main] getFibNum Leaving method 
+2015-12-07 18:26:08,659 DEBUG FibGenerator [main] getFibNum Entering method 
+2015-12-07 18:26:08,659 DEBUG FibGenerator [main] getFibNum Leaving method 
+2015-12-07 18:26:08,746 DEBUG FibGenerator [main] getFibNum Entering method 
+2015-12-07 18:26:08,746 DEBUG FibGenerator [main] getFibNum Leaving method 
+2015-12-07 18:26:08,748 DEBUG FibGenerator [main] getFibNum Entering method 
+2015-12-07 18:26:08,748 DEBUG FibGenerator [main] getFibNum Leaving method 
+2015-12-07 18:26:08,749 DEBUG FibGenerator [main] getFibNum Entering method 
+2015-12-07 18:26:08,749 DEBUG FibGenerator [main] getFibNum Leaving method 
+2015-12-07 18:26:08,755 DEBUG FibGenerator [main] getNextNum current iter = 0 fibNum = 0 

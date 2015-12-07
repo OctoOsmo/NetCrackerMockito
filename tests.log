@@ -1,0 +1,10 @@
+2015-12-07 18:24:32,262 INFO ArithmeticOperationsTest [main] testAddValue Adding one number to another 
+2015-12-07 18:24:33,262 INFO FibGeneratorTest [main] testGetFib0 Entering method 
+2015-12-07 18:24:33,263 INFO FibGeneratorTest [main] testGetFib0 Leaving method 
+2015-12-07 18:24:33,882 INFO FibGeneratorTest [main] testGetFibSeq Entering method 
+2015-12-07 18:24:33,883 INFO FibGeneratorTest [main] testGetFibSeq Leaving method 
+2015-12-07 18:26:07,772 INFO ArithmeticOperationsTest [main] testAddValue Adding one number to another 
+2015-12-07 18:26:08,745 INFO FibGeneratorTest [main] testGetFib0 Entering method 
+2015-12-07 18:26:08,747 INFO FibGeneratorTest [main] testGetFib0 Leaving method 
+2015-12-07 18:26:09,330 INFO FibGeneratorTest [main] testGetFibSeq Entering method 
+2015-12-07 18:26:09,331 INFO FibGeneratorTest [main] testGetFibSeq Leaving method 

@@ -1,5 +1,7 @@
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.Marker;
+import org.apache.logging.log4j.MarkerManager;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -11,7 +13,8 @@ import static org.junit.Assert.*;
  */
 public class ArithmeticOperationsTest {
 
-    Logger logger = LogManager.getLogger(ArithmeticOperationsTest.class);
+    final Logger logger = LogManager.getLogger(ArithmeticOperationsTest.class);
+    final Marker test = MarkerManager.getMarker("test");
 
     @Before
     public void setUp() throws Exception {
@@ -25,7 +28,8 @@ public class ArithmeticOperationsTest {
 
     @Test
     public void testAddValue() throws Exception {
-        logger.info("Adding one number to another");
+        logger.info(test, "Adding one number to another");
+
         Integer b = ArithmeticOperations.addValue(2, 3);
         assertEquals((Integer)5, b);
     }

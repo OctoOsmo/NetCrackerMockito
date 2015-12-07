@@ -1,25 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Configuration status="WARN">
     <Appenders>
-        <File name="file" fileName="app.log">
+        <File name="JUnitTests" fileName="tests.log">
+            <MarkerFilter marker="test" onMatch="ACCEPT" onMismatch="DENY"/>
             <PatternLayout>
                 <Pattern>%d %p %c{1.} [%t] %M %m %ex%n</Pattern>
             </PatternLayout>
         </File>
-        <File name="fileErrors" fileName="appErrors.log">
+        <File name="MainLog" fileName="main.log">
+            <MarkerFilter marker="main_log" onMatch="ACCEPT" onMismatch="DENY"/>
             <PatternLayout>
-                <Pattern>%d %p %c{1.} [%t] %m %ex%n</Pattern>
+                <Pattern>%d %p %c{1.} [%t] %M %m %ex%n</Pattern>
             </PatternLayout>
         </File>
-        <Console name="STDOUT" target="SYSTEM_OUT">
-            <PatternLayout pattern="%M %m %n"/>
-        </Console>
     </Appenders>
     <Loggers>
         <Root level="trace">
-            <AppenderRef ref="file" level="DEBUG"/>
             <AppenderRef ref="fileErrors" level="ERROR"/>
-            <AppenderRef ref="STDOUT" level="INFO"/>
+            <AppenderRef ref="JUnitTests" level="INFO"/>
+            <AppenderRef ref="MainLog" level="ALL"/>
         </Root>
     </Loggers>
 </Configuration>
